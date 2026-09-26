@@ -1,0 +1,143 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f2f2f2;
+    min-height: 100vh;
+}
+
+.contenedor {
+    width: 90%;
+    max-width: 1000px;
+    margin: 40px auto;
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+}
+
+header {
+    background: #222;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin-bottom: 8px;
+}
+
+#estado {
+    font-size: 14px;
+}
+
+.pantalla-nombre {
+    padding: 40px;
+    text-align: center;
+}
+
+.pantalla-nombre h2 {
+    margin-bottom: 20px;
+}
+
+.pantalla-nombre input {
+    width: 70%;
+    max-width: 400px;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    margin-right: 5px;
+}
+
+button {
+    padding: 12px 18px;
+    border: none;
+    border-radius: 6px;
+    background: #222;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    opacity: 0.85;
+}
+
+.chat {
+    display: flex;
+    min-height: 500px;
+}
+
+.chat aside {
+    width: 230px;
+    background: #f5f5f5;
+    padding: 20px;
+    border-right: 1px solid #ddd;
+}
+
+.chat aside h3 {
+    margin-bottom: 15px;
+}
+
+#usuarios {
+    list-style: none;
+}
+
+#usuarios li {
+    padding: 8px;
+    border-bottom: 1px solid #ddd;
+}
+
+.chat main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.mensajes {
+    flex: 1;
+    padding: 20px;
+    overflow-y: auto;
+    min-height: 350px;
+}
+
+.mensaje {
+    margin-bottom: 12px;
+    padding: 10px;
+    background: #f1f1f1;
+    border-radius: 6px;
+}
+
+.sistema {
+    color: #666;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+#escribiendo {
+    height: 20px;
+    padding-left: 20px;
+    color: #777;
+    font-size: 13px;
+}
+
+.entrada {
+    display: flex;
+    gap: 10px;
+    padding: 15px;
+    border-top: 1px solid #ddd;
+}
+
+.entrada input {
+    flex: 1;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+.oculto {
+    display: none;
+}

@@ -1,0 +1,78 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat WebSocket</title>
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <div class="contenedor">
+
+        <header>
+            <h1>Chat WebSocket</h1>
+            <p id="estado">Desconectado</p>
+        </header>
+
+        <section id="pantallaNombre" class="pantalla-nombre">
+
+            <h2>Entrar al chat</h2>
+
+            <input
+                type="text"
+                id="nombre"
+                placeholder="Escribe tu nombre"
+                maxlength="30"
+            >
+
+            <button id="btnEntrar">
+                Entrar
+            </button>
+
+        </section>
+
+        <section id="chat" class="chat oculto">
+
+            <aside>
+
+                <h3>Usuarios conectados</h3>
+
+                <ul id="usuarios"></ul>
+
+            </aside>
+
+            <main>
+
+                <div id="mensajes" class="mensajes"></div>
+
+                <p id="escribiendo"></p>
+
+                <div class="entrada">
+
+                    <input
+                        type="text"
+                        id="mensaje"
+                        placeholder="Escribe un mensaje..."
+                        maxlength="500"
+                    >
+
+                    <button id="btnEnviar">
+                        Enviar
+                    </button>
+
+                </div>
+
+            </main>
+
+        </section>
+
+    </div>
+
+    <script src="config.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
